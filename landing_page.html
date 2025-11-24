@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ecomarket</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="ecomarket.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .navbar {
+            background-color: rgb(191, 226, 191);
+        }
+
+        /* Hero section con imagen de fondo */
+        .hero {
+            background: url('https://www.theladders.com/wp-content/uploads/handshake_190617.jpg') no-repeat center center/cover;
+            min-height: 80vh;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Cards */
+        .card {
+            border-radius: 15px;
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Protegemos lo que más te importa</h1>
+            <p class="lead">ASECOL ofrece seguros personales y empresariales con asesoría humana y soluciones claras.</p>
+            <a class="btn btn-lg btn-primary text-light fw-bold me-2">Nuestros seguros</a>
+            <a class="btn btn-lg btn-outline-light">Cotiza ahora</a>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">¿Por qué ASECOL?</h2>
+            <div class="col-g-3 justify-content-center row">
+                <div class="col-sm-3">
+                    <div class="card h-100 shadow-sm mx-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Cobertura completa</h5>
+                            <p class="card-text">Planes diseñados para proteger tu patrimonio y a tu familia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card h-100 shadow-sm mx-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Atención 24/7</h5>
+                            <p class="card-text">Asistencia y tramitación rápida cuando más la necesitas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card h-100 shadow-sm mx-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Protección confiable</h5>
+                            <p class="card-text">Compromiso con transparencia y soluciones eficientes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Asecol -->
+    <section id="Nosotros" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Sobre ASECOL</h2>
+            <p class="lead">ASECOL es una compañía de seguros comprometida con ofrecer protección integral a
+                personas y empresas. Brindamos pólizas claras, atención personalizada y procesos ágiles para
+                que tengas la tranquilidad que mereces.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 ASECOL Seguros | Protegiendo tu presente y asegurando tu futuro</p>
+            <p>
+                <a href="#" class="text-white me-2">Facebook</a> |
+                <a href="#" class="text-white me-2">Instagram</a> |
+                <a href="#" class="text-white">X</a> |
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
