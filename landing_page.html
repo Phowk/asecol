@@ -16,7 +16,7 @@
 
         /* Hero section con imagen de fondo */
         .hero {
-            background: url('https://www.theladders.com/wp-content/uploads/handshake_190617.jpg') no-repeat center center/cover;
+            background: url('handshake.webp') no-repeat center center/cover;
             min-height: 80vh;
             position: relative;
         }
@@ -56,7 +56,6 @@
         </div>
     </section>
 
-    <!-- Beneficios -->
     <section class="py-5">
         <div class="container text-center">
             <h2 class="mb-4 fw-bold">¿Por qué ASECOL?</h2>
@@ -88,6 +87,139 @@
             </div>
         </div>
     </section>
+
+<section id="Infraestructura" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Infraestructura de Red Implementada</h2>
+
+        <p class="lead text-center mb-5">
+            Nuestra arquitectura de red está diseñada para garantizar disponibilidad, seguridad
+            y conectividad eficiente entre la sede principal y la sede secundaria. La infraestructura
+            integra servicios esenciales, balanceo de carga y un enlace dedicado para la salida a Internet.
+        </p>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Sede Secundaria</h4>
+                        <p class="card-text">
+                            La sede secundaria cuenta con una LAN independiente donde se ubican los
+                            equipos de usuario final. Esta red se conecta directamente al router de sede,
+                            el cual establece un enlace dedicado hacia la sede principal para la comunicación
+                            interna y el acceso a los servicios centrales.
+                        </p>
+                        <ul>
+                            <li>Conectividad LAN para estaciones de trabajo (PC1, PC2, PC3, etc.)</li>
+                            <li>Router de sede para interconexión privada</li>
+                            <li>Segmento de red configurado según la máscara institucional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Sede Principal</h4>
+                        <p class="card-text">
+                            La sede principal centraliza todos los servicios críticos de la organización,
+                            incluyendo servidores de comunicación, servicios web, DNS y almacenamiento de respaldo.
+                            Esta sede también alberga la puerta de enlace principal hacia Internet.
+                        </p>
+                        <ul>
+                            <li>Servidor DHCP</li>
+                            <li>Servidor de Correo (E-MAIL)</li>
+                            <li>Servidor Web</li>
+                            <li>Servidor DNS</li>
+                            <li>Servidor de Copias de Seguridad (Backup)</li>
+                            <li>Gateway con acceso a Internet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<section id="Topologias" class="py-5 bg-light">
+    <div class="container">
+
+        <h2 class="fw-bold text-center mb-4">Topologías de Red Utilizadas</h2>
+        <p class="lead text-center mb-5">
+            La infraestructura combina diferentes topologías para optimizar la comunicación, 
+            garantizar eficiencia y mantener un diseño escalable entre sedes y servicios.
+        </p>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-img-top bg-secondary d-flex align-items-center justify-content-center"
+                        style="height:180px;">
+                        <img src="estrella.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Topología en Estrella</h5>
+                        <p class="card-text">
+                            Utilizada en ambas sedes, donde los servidores y equipos finales se conectan a 
+                            un switch central que actúa como punto de interconexión principal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-img-top bg-secondary d-flex align-items-center justify-content-center"
+                        style="height:180px;">
+                        <img src="punto-punto.png" style="width: 400px;" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Topología Punto a Punto</h5>
+                        <p class="card-text">
+                            Empleada para enlazar directamente los routers de la sede principal 
+                            y la sede secundaria mediante un enlace WAN dedicado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-img-top bg-secondary d-flex align-items-center justify-content-center"
+                        style="height:180px;">
+                        <img src="jerarquica.png" style="width: 300px;" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Topología Jerárquica</h5>
+                        <p class="card-text">
+                            Refleja la arquitectura general de la red, organizada en niveles de 
+                            acceso, distribución y núcleo, facilitando escalabilidad y gestión.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- Enlace y comunicación -->
+        <div class="mt-5">
+            <h4 class="text-center text-primary">Enlace de Comunicación entre Sedes</h4>
+            <p class="text-center px-3">
+                Ambas sedes están unidas mediante un enlace de red dedicado que permite la transmisión de datos 
+                de forma segura y estable. Esta comunicación asegura que los equipos de la sede secundaria puedan 
+                acceder a los servicios alojados en la sede principal sin interrupciones, garantizando continuidad 
+                operativa y una administración centralizada de los recursos.
+            </p>
+        </div>
+
+    </div>
+</section>
+
 
     <!-- Sobre Asecol -->
     <section id="Nosotros" class="py-5 bg-light">
